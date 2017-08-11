@@ -40,12 +40,12 @@ public class Steps  {
 	   public void checkPass() throws InterruptedException {  
 		   Thread.sleep(4000);
 	      if(driver.getCurrentUrl().equalsIgnoreCase(
-	         "https://mail.google.com/mail/u/0/#inbox")){ 
+	         "https://mail.google.com/mail/#inbox")){ 
 	            System.out.println("Test1 Pass"); 
 	      } else { 
 	         System.out.println("Test1 Failed"); 
 	      } 
-	      driver.close(); 
+	    
 	   }
 	   @Then("^Login should be Fail$") 
 	   public void checkFail() throws InterruptedException {  
